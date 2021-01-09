@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: test-app 
+  namespace : kube-system 
+spec:
+  type: ExternalName
+  externalName: test-app.api.svc.cluster.local
+  ports:
+    - port: 80

@@ -1,0 +1,8 @@
+version : "3"
+services: 
+  test_app:
+    container_name: test_app
+    image : test_app
+    build: .
+    ports:
+      - 3000:3000    

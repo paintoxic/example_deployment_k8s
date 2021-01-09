@@ -1,0 +1,11 @@
+Set docker-env to a minikube k8s cluster
+
+This operation allow build images directly in a context of minikube
+
+eval $(minikube docker-env)
+
+Then build docker images like a locally
+
+docker build -t <IMAGE_NAME> <PATH_OF_DOCKERFILE>
+
+In the deployments that use the previously builded image the imagePullPolicy must be set to "Never", so that k8s doesnt try to download the images

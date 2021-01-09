@@ -1,0 +1,4 @@
+node_modules
+docker-compose.yml
+k8s
+.gitignore
